@@ -55,6 +55,7 @@ var answerEl5 = document.getElementById("answer5");
 function startQuiz () {
     //hide welcome screen
     welcomeScreen.classList.add("hidden");
+    //welcomeScreen.classList.
 
     //Bring up question 1 screen
     answerCatalog.classList.remove("hidden");
@@ -65,27 +66,42 @@ function startQuiz () {
     answerEl2.textContent = questionsArray[index].answer2;
     answerEl3.textContent = questionsArray[index].answer3;
     answerEl4.textContent = questionsArray[index].answer4;
-    answerEl5.textContent = questionsArray[index].answer5;
 }
 
 //funciton timer
 function timer () {
-    if (answerEl1 != correctAnswer || answerEl2 != correctAnswer 
-        || answerEl3 != correctAnswer || answerEl4 != correctAnswer
-        || answerEl5 != correctAnswer) {
+
+    if (answerEl1 != question1.correctAnswer) {
         timer -= 10;
+    } else if (answerEl2 != question2.correctAnswer) {
+        timer -= 10;
+    } else if (answerEl3 != question3.correctAnswer) {
+        timer -= 10;
+    } else {
+        nextQuestion();
+    } 
+}
+
+//function for checking the right answer
+function rightAnswer () {
+    index++;
+    if (question1[index] != correctAnswer) {
+        index++;
+    } else if (question1[index] != correctAnswer) {
+        index++;
+    } else if (question1[index] != correctAnswer) {
+        index++;
     } else {
         nextQuestion();
     }
 }
-//function for checking the right answer
-function rightAnswer () {
-    index++;
-    if (question1[index]. != correctAnswer) {
-        
-    }
-}
 
 //function next question
+function nextQuestion () {
+    
+}
 
 //game over function
+
+startQuiz();
+timer();

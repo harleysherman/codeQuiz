@@ -1,22 +1,25 @@
 /* Overall styling font, colors, and background */
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     color: black;  
     background-color: #F2C791;  
+    text-align: center;
 }
 
 h1 {
-    font-size: larger;
+    font-size: 3em;
 }
 
 p {
-    font-size: large;
+    font-size: 1.25em;
     color: #73532D;
 }
 
 button {
     background-color:#3F5952;
+    color: white;
     border-radius: 10px;
+    font-size: 1.25em;
 }
 
 /* Styling of questions here */
