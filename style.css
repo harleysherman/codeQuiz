@@ -1,0 +1,25 @@
+/* Overall styling font, colors, and background */
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;  
+    background-color: #F2C791;  
+}
+
+h1 {
+    font-size: larger;
+}
+
+p {
+    font-size: large;
+    color: #73532D;
+}
+
+button {
+    background-color:#3F5952;
+    border-radius: 10px;
+}
+
+/* Styling of questions here */
+.hidden {
+    display: none;
+}
